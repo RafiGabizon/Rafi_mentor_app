@@ -16,5 +16,8 @@
   },
   "engines": {
     "node": ">=14.0.0"
-  }
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
