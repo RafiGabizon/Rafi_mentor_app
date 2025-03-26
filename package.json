@@ -6,8 +6,8 @@
   "scripts": {
     "preinstall": "npm set progress=false",
     "install": "npm run install:client && npm run install:server",
-    "install:client": "cd client && npm ci --omit=dev",
-    "install:server": "cd server && npm ci --omit=dev",
+    "install:client": "cd client && npm ci",
+    "install:server": "cd server && npm ci",
     "build": "npm run build:client && npm run build:server",
     "build:client": "cd client && npm run build",
     "build:server": "cd server && npm run build",
@@ -15,10 +15,10 @@
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "concurrently": "^8.2.2"
   },
   "engines": {
-    "node": ">=22.0.0",
-    "npm": ">=9.0.0"
+    "node": ">=20.11.0",
+    "npm": ">=10.8.2"
   }
 }
