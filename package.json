@@ -1,0 +1,15 @@
+{
+  "name": "code-mentor-app",
+  "version": "1.0.0",
+  "description": "Real-time code sharing platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
