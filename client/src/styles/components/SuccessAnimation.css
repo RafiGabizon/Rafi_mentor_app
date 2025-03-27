@@ -1,0 +1,78 @@
+/* Import variables */
+@import '../variables.css';
+
+/* Success message overlay */
+.smiley-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease;
+}
+
+.smiley {
+    font-size: 150px;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite alternate;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.success-message {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    padding: 10px 20px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-lg);
+    animation: pulse 2s infinite;
+}
+
+/* Confetti effect for the success overlay */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--warning-color);
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: fall 4s linear infinite;
+}
+
+.confetti:nth-child(2n) {
+    background-color: var(--danger-color);
+    width: 8px;
+    height: 8px;
+}
+
+.confetti:nth-child(3n) {
+    background-color: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+.confetti:nth-child(4n) {
+    background-color: var(--secondary-color);
+    width: 7px;
+    height: 7px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .smiley {
+        font-size: 100px;
+    }
+
+    .success-message {
+        font-size: 28px;
+    }
+}

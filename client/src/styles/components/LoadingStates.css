@@ -1,0 +1,39 @@
+/* Import variables */
+@import '../variables.css';
+
+/* Loading and error states */
+.loading,
+.error {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 18px;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+}
+
+.loading {
+    background-color: var(--bg-light);
+    color: var(--primary-color);
+    position: relative;
+    padding-left: 45px;
+}
+
+.loading:before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(52, 152, 219, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s linear infinite;
+}
+
+.error {
+    background-color: #fdedec;
+    color: var(--danger-color);
+    border-left: 5px solid var(--danger-color);
+}

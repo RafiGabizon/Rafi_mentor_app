@@ -1,0 +1,49 @@
+/* Import variables */
+@import '../variables.css';
+
+.lobby-container .loading,
+.lobby-container .error {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 18px;
+    padding: var(--spacing-lg);
+}
+
+.lobby-container .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.lobby-container .loading::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    border: 3px solid rgba(52, 152, 219, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s linear infinite;
+    vertical-align: middle;
+}
+
+.lobby-container .error {
+    color: var(--danger-color);
+    padding: var(--spacing-lg);
+    background-color: #fdedec;
+    border-radius: var(--border-radius-md);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    border-left: 4px solid var(--danger-color);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

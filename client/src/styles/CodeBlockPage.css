@@ -1,0 +1,25 @@
+/* Main CodeBlockPage styles */
+
+/* Import component styles */
+@import './variables.css';
+@import './components/CodeEditor.css';
+@import './components/SuccessAnimation.css';
+@import './components/CodeBlockHeader.css';
+@import './components/RoleNotification.css';
+@import './components/CodeBlockDescription.css';
+@import './components/LoadingStates.css';
+
+/* Main container for the code block page */
+.code-block-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .code-block-container {
+        padding: var(--spacing-md);
+    }
+}

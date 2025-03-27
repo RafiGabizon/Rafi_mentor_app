@@ -1,0 +1,31 @@
+/* Main Lobby styles */
+
+/* Import component styles */
+@import './variables.css';
+@import './components/LobbyHeader.css';
+@import './components/CodeBlockItem.css';
+@import './components/LobbyLoadingStates.css';
+
+/* Main container for the lobby */
+.lobby-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .lobby-container {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lobby-container {
+        padding: 25px 15px;
+    }
+}

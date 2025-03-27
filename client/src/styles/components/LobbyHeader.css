@@ -1,0 +1,30 @@
+/* Import variables */
+@import '../variables.css';
+
+.lobby-container h1 {
+    margin-bottom: 40px;
+    color: var(--text-color);
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.lobby-container h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+    border-radius: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .lobby-container h1 {
+        font-size: 28px;
+    }
+}

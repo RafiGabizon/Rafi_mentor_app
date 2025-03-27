@@ -1,0 +1,25 @@
+/* Import variables */
+@import '../variables.css';
+
+/* Task description section */
+.code-block-description-container {
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    border-left: 4px solid var(--primary-color);
+}
+
+.code-block-description-container h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.code-block-description {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
