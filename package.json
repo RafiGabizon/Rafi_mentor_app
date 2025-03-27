@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npm set progress=false",
-    "install": "npm run install:client && npm run install:server",
+    "setup": "npm run install:client && npm run install:server",
     "install:client": "cd client && npm ci",
     "install:server": "cd server && npm ci",
     "build": "npm run build:client && npm run build:server",
