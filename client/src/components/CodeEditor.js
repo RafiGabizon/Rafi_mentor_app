@@ -3,11 +3,8 @@ import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import js from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript';
 import atomOneDark from 'react-syntax-highlighter/dist/esm/styles/hljs/atom-one-dark';
 
-// Register the javascript language for syntax highlighting
 SyntaxHighlighter.registerLanguage('javascript', js);
 
-// CodeEditor component
-// This component displays a code editor with syntax highlighting and line numbers for the given code string 
 export default function CodeEditor({ code, onChange, isMentor }) {
   return (
     <div className={`code-editor ${isMentor ? 'readonly' : 'editable'}`}>
@@ -39,7 +36,7 @@ export default function CodeEditor({ code, onChange, isMentor }) {
           fontSize: '14px',
           lineHeight: '1.5',
           fontFamily: 'Consolas, Courier New, monospace',
-          backgroundColor: '#282c34', 
+          backgroundColor: '#282c34',
         }}
       >
         {code}
