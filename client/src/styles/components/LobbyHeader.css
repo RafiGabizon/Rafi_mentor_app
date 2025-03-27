@@ -1,6 +1,7 @@
 /* Import variables */
 @import '../variables.css';
 
+/* Header section with title and status indicators */
 .lobby-container h1 {
     margin-bottom: 40px;
     color: var(--text-color);

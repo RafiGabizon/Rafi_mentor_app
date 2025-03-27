@@ -1,6 +1,7 @@
 /* Import variables */
 @import '../variables.css';
 
+/* Lobby loading and error states */
 .lobby-container .loading,
 .lobby-container .error {
     text-align: center;
@@ -42,6 +43,7 @@
     border-left: 4px solid var(--danger-color);
 }
 
+/* Loading spinner animation */
 @keyframes spin {
     to {
         transform: rotate(360deg);

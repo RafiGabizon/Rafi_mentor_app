@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
+// API_BASE_URL is the base URL for the API server
 const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
+// useCodeBlock hook
+// This hook fetches a code block by ID from the API server
 export default function useCodeBlock(id) {
   const [codeBlock, setCodeBlock] = useState(null);
   const [loading, setLoading] = useState(true);

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/Lobby.css';
 
+// Lobby component
+// This component displays a list of code blocks to choose from
 export default function Lobby() {
     const [codeBlocks, setCodeBlocks] = useState([]);
     const [loading, setLoading] = useState(true);

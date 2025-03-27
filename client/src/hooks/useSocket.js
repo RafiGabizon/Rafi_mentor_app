@@ -2,9 +2,11 @@ import { useState, useEffect, useCallback } from 'react';
 import io from 'socket.io-client';
 import { debounce } from 'lodash';
 
+// SOCKET_SERVER_URL is the URL of the socket server
 const SOCKET_SERVER_URL = process.env.REACT_APP_SOCKET_URL || 'http://localhost:5000';
 
-
+// useSocket hook
+// This hook manages the socket connection and event listeners for the code editor
 export default function useSocket({
   roomId,
   username,

@@ -1,3 +1,4 @@
+/* Code Editor area */
 .code-editor {
     position: relative;
     border-radius: 6px;
@@ -7,10 +8,6 @@
     height: 500px;
     margin-bottom: 24px;
 }
-
-/* REMOVE these labels for consistent view */
-/* .readonly::before, .editable::before, .editable::after { display: none !important; } */
-
 .code-textarea {
     width: 100%;
     height: 100%;
@@ -35,7 +32,7 @@
     caret-color: white;
 }
 
-/* Highlight overlay (always visible now) */
+/* Highlight overlay */
 .code-preview {
     text-align: left;
     direction: ltr;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
+// SuccessAnimation component
+// This component displays a success animation with confetti and a smiley face
 export default function SuccessAnimation({ show, emoji = '😃' }) {
   const [confetti, setConfetti] = useState([]);
 
