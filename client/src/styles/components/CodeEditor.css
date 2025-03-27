@@ -126,9 +126,9 @@
 }
 
 /* Editable mode hides the preview */
-.editable .code-preview {
+/* .editable .code-preview {
     display: none;
-}
+} */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

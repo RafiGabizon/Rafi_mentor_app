@@ -6,7 +6,8 @@ import atomOneDark from 'react-syntax-highlighter/dist/esm/styles/hljs/atom-one-
 // Register JavaScript for syntax highlighting
 SyntaxHighlighter.registerLanguage('javascript', js);
 
-// Memoized component to prevent unnecessary re-renders
+// component for the code editor
+// displays the code editor with syntax highlighting and line numbers
 export default function CodeEditor({ code, onChange, isMentor }) {
   return (
     <>

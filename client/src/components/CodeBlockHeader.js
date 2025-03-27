@@ -1,5 +1,7 @@
 import React from 'react';
 
+// component for the header of the code block
+// displays the title, role badge, number of students, and buttons to reset code and return to lobby
 export default function CodeBlockHeader({ 
   title, 
   isMentor, 
