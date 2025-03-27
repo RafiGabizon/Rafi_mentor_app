@@ -7,7 +7,8 @@ services:
     startCommand: node index.js
     workingDir: server
     envVars:
-      - fromDotEnv: true
+      - key: MONGO_URI
+        value: your-mongo-uri-goes-here
 
   - name: rafi-mentor-client
     type: web
@@ -16,4 +17,7 @@ services:
     buildCommand: cd client && npm install && npm run build
     staticPublishPath: client/build
     envVars:
-      - fromDotEnv: true
+      - key: REACT_APP_API_URL
+        value: https://rafi-mentor-server.onrender.com
+      - key: REACT_APP_SOCKET_URL
+        value: https://rafi-mentor-server.onrender.com
