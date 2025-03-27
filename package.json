@@ -8,10 +8,10 @@
     "setup": "npm run install:client && npm run install:server",
     "install:client": "cd client && npm ci",
     "install:server": "cd server && npm ci",
-    "build": "npm run build:client && npm run build:server",
+    "build": "cd client && npm run build",
     "build:client": "cd client && npm run build",
     "build:server": "cd server && npm run build",
-    "start": "npm run build && cd server && npm start",
+    "start": "cd server && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "dependencies": {
