@@ -1,6 +1,6 @@
 # Rafi Mentor App
 
-Welcome to **Rafi Mentor App** – a web application designed to connect mentors and learners in an intuitive and simple way.
+**Rafi Mentor App** – a web application designed to connect mentors and learners in an intuitive and simple way.
 
 ## Live Application
 
@@ -8,9 +8,7 @@ Welcome to **Rafi Mentor App** – a web application designed to connect mentors
 
 ## About the Project
 
-Rafi Mentor App is a full-stack web application that enables users to register as mentors or mentees, manage sessions, and share knowledge in a structured and user-friendly environment.
-
-This project was created as part of a learning and development initiative.
+App is a full-stack web application that enables users to register as mentors or mentees, manage sessions, and share knowledge in a structured and user-friendly environment.
 
 ## Technologies Used
 
