@@ -11,7 +11,8 @@ services:
         value: mongodb+srv://rafigabizon11:300495Rg%24@cluster0.w3s2o.mongodb.net/code-mentor?retryWrites=true&w=majority
 
   - name: rafi-mentor-client
-    type: static
+    type: web
+    env: static
     buildCommand: npm install && npm run build
     staticPublishPath: build
     rootDir: client
