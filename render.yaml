@@ -5,10 +5,10 @@ services:
     plan: free
     buildCommand: cd server && npm install
     startCommand: node index.js
-    # workingDir: server
+    workingDir: server
     envVars:
       - key: MONGO_URI
-        value: mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority
+        value: mongodb+srv://rafigabizon11:300495Rg%24@cluster0.w3s2o.mongodb.net/code-mentor?retryWrites=true&w=majority
 
   - name: rafi-mentor-client
     type: web
