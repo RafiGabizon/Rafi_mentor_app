@@ -3,9 +3,9 @@ services:
     type: web
     env: node
     plan: free
-    buildCommand: cd server && npm install
+    buildCommand: npm install
     startCommand: node index.js
-    workingDir: server
+    rootDir: server
     envVars:
       - key: MONGO_URI
         value: mongodb+srv://rafigabizon11:300495Rg%24@cluster0.w3s2o.mongodb.net/code-mentor?retryWrites=true&w=majority
@@ -14,8 +14,9 @@ services:
     type: web
     env: static
     plan: free
-    buildCommand: cd client && npm install && npm run build
-    staticPublishPath: client/build
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    rootDir: client
     envVars:
       - key: REACT_APP_API_URL
         value: https://rafi-mentor-server.onrender.com
